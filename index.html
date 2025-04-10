@@ -22,7 +22,6 @@
     <link rel="icon" type="image/png" sizes="192x192" href="icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="icon/android-chrome-512x512.png">
     <link rel="icon" type="image/png" href="icon/apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 
@@ -321,32 +320,35 @@
             </div>
           </div>
         </div>
-        
+           
         <div class="contact-form">
-          <form id="contactForm">
+          <form id="contact-form" class="w-full space-y-4">
             <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" placeholder="Enter your name">
+              <label for="name" class="block font-medium">Your Name</label>
+              <input type="text" id="name" placeholder="Enter your name" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
             </div>
-            
+        
             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" placeholder="Enter your email">
+              <label for="email" class="block font-medium">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
             </div>
-            
+        
             <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" placeholder="Enter subject">
+              <label for="subject" class="block font-medium">Subject</label>
+              <input type="text" id="subject" placeholder="Enter subject" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
             </div>
-            
+        
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" placeholder="Type your message here" rows="5"></textarea>
+              <label for="message" class="block font-medium">Message</label>
+              <textarea id="message" placeholder="Type your message here" rows="5" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
             </div>
-            
-            <button type="submit" class="btn btn-java btn-full">Send Message</button>
+        
+            <button type="submit" id="submit-button" class="btn btn-java btn-full bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition duration-200">
+              <span id="submit-text">Send Message</span>
+            </button>
           </form>
         </div>
+        
       </div>
     </div>
   </section>
